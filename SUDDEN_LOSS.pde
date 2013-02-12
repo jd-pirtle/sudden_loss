@@ -35,25 +35,30 @@ void draw() {
   
   // cycle through different states every 45 secs
   
-  if (millis() > 0 && millis() < 45000) {
+  if (millis() > 0 && millis() < 100000) {
   gold.single();
   }
   
-  if (millis() > 45000 && millis() < 90000) {
+  if (millis() > 100000 && millis() < 200000) {
   gold.deep();
   }
   
-  if (millis() > 90000 && millis() < 135000) {
+  if (millis() > 200000 && millis() < 300000) {
   gold.together();
   }
   
-  if (millis() > 135000 && millis() < 180000) {
+  if (millis() > 300000 && millis() < 400000) {
   gold.wave();
   }
   
-  if (millis() > 180000 && millis() < 225000) {
+  if (millis() > 500000 && millis() < 600000) {
   gold.moire();
   }
+  
+  if (millis() > 600000) {
+  exit();
+  }
+  
   
   
 }
